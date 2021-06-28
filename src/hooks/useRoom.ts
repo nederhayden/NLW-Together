@@ -9,7 +9,7 @@ type QuestionType = {
     avatar: string;
   };
   content: string;
-  isAnswered: string;
+  isAnswered: boolean;
   isHighlighted: boolean;
   likeCount: number;
   likeId: string | undefined;
@@ -23,7 +23,7 @@ type FirebaseQuestions = Record<
       avatar: string;
     };
     content: string;
-    isAnswered: string;
+    isAnswered: boolean;
     isHighlighted: boolean;
     likes: Record<string, { authorId: string }>;
   }
